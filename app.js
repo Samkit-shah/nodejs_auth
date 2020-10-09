@@ -4,6 +4,7 @@
 var express = require('express'),
     routes = require('./routes'),
     user = require('./routes/user'),
+    index = require('./routes/index'),
     http = require('http'),
     path = require('path');
 //var methodOverride = require('method-override');
@@ -38,11 +39,12 @@ app.use(session({
 
 // development only
 
-app.get('/', routes.index); //call for main index page
-app.get('/signup', user.signup); //call for signup page
-app.post('/signup', user.signup); //call for signup post
-app.get('/login', routes.index); //call for login page
+app.get('/', index.homepage); //call for main index page
+app.get('/register', user.register); //call for signup page
+app.post('/register', user.register); //call for signup post
+app.get('/login', index.login_final); //call for login page
 app.post('/login', user.login); //call for login post
+app.post('/donation', user.donation); //call for login post
 app.get('/home/dashboard', user.dashboard); //call for dashboard page after login
 app.get('/home/logout', user.logout); //call for logout
 app.get('/home/profile', user.profile); //to render users profile

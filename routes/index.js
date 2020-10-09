@@ -1,9 +1,14 @@
 /*
-* GET home page.
-*/
- 
-exports.index = function(req, res){
+ * GET home page.
+ */
+
+exports.login_final = function(req, res) {
     var message = '';
-  res.render('index',{message: message});
- 
+    res.render('login_final', { message: message });
+
+};
+exports.homepage = function(req, res) {
+    var message = '';
+    res.render('homepage', { message: message });
+
 };

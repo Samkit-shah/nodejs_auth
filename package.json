@@ -8,9 +8,8 @@
         "start": "nodemon app.js"
     },
     "author": {
-        "name": "Adam",
-        "email": "jstutorials1@gmail.com",
-        "url": "http://www.js-tutorials.com/"
+        "name": "Samkit"
+
     },
     "license": "MIT",
     "dependencies": {
