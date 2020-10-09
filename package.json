@@ -9,10 +9,10 @@
     },
     "author": {
         "name": "Samkit"
-
     },
     "license": "MIT",
     "dependencies": {
+        "bcryptjs": "^2.4.3",
         "body-parser": "^1.19.0",
         "dotenv": "^8.2.0",
         "ejs": "^2.7.4",

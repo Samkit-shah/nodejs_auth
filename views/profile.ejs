@@ -14,7 +14,8 @@
 
 <body>
     <nav class="navbar navbar-dark navbar-expand-lg  bg-dark ">
-        <div class="container"><a class="navbar-brand logo" href="#">Unite</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand logo" href="/">Unite</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span
+                        class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link " href="/">About us</a></li>
@@ -30,8 +31,8 @@
                 <div class="alert alert-success alert-dismissible fade show shadow" role="alert" style="margin-top: 10px;">
                     <strong> <%=message%></strong>
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                           <span aria-hidden="true">&times;</span>
-                           </button>
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
 
             </div>
@@ -42,31 +43,31 @@
                         <div class="card shadow" style="margin:  2% 5%;height: 100%;">
                             <div class="card-body">
                                 <h5 class="card-title">Welcome
-                                    <%=data[0].first_name%>,
-                                        <%=data[0].last_name%>
+                                    <b style="text-transform: capitalize;"><%=data[0].first_name%>
+                                    <%=data[0].last_name%></b>
                                 </h5>
 
                                 <p class="card-text">Email Id:
-                                    <%=data[0].user_name%><br> Phone Number:
+                                    <%=data[0].email%><br> Phone Number:
                                         <%=data[0].mob_no%>
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md">
-                        <div class="card shadow" style="margin:  2% 5%;height: 100%;">
-                            <div class="card-body">
-                                <h5 class="card-title">Donations</h5>
-                                <p class="card-text">Your Donation :
-                                    <%=data[0].amount%>
+                    <div class=" col-md ">
+                        <div class=" card shadow " style=" margin: 2% 5%;height: 100%; ">
+                            <div class=" card-body ">
+                                <h5 class=" card-title "><b>Donations</b></h5>
+                                <p class=" card-text ">Your Donation :
+                                    <b> <%=data[0].amount%></b>
                                 </p>
-                                <form id="loginform" class="form-horizontal" role="form" method="post" action="/donation">
-                                    <div class="form-group">
-                                        <label for="amount">Amount You Wish to Donate</label>
-                                        <input type="number" id="login-username" class="form-control" name="amount" value="" placeholder="Amount" required>
+                                <form id=" loginform " class=" form-horizontal " role=" form " method="post" action="/donation">
+                                    <div class=" form-group ">
+                                        <label for=" amount ">Amount You Wish to Donate:</label>
+                                        <input type="number" id="login-username" class=" form-control" name="amount" value=" " placeholder="Amount" required>
                                     </div>
 
-                                    <button type="submit" class="btn btn-primary">Donate</button>
+                                    <button type=" submit " class=" btn btn-primary ">Donate</button>
                                 </form>
                             </div>
                         </div>

@@ -45,7 +45,7 @@ app.post('/register', user.register); //call for signup post
 app.get('/login', index.login_final); //call for login page
 app.post('/login', user.login); //call for login post
 app.post('/donation', user.donation); //call for login post
-app.get('/home/dashboard', user.dashboard); //call for dashboard page after login
+
 app.get('/home/logout', user.logout); //call for logout
 app.get('/home/profile', user.profile); //to render users profile
 //Middleware
