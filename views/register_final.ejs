@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="/assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="/assets/css/smoothproducts.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg  bg-dark ">
+        <div class="container"><a class="navbar-brand logo" href="#">Unite</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span
+          class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link " href="/">About us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/register">Became a volunteer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/login">Donate</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="card" style="margin: 2%;">
+            <% if (message.length > 0) { %>
+                <div class="alert alert-success col-sm-12">
+                    <%= message %>
+                </div>
+                <% } %>
+                    <div class="card-header">
+                        Register Here
+                    </div>
+                    <div class="card-body">
+                        <form action="/register" method="POST">
+                            <div class="form-group">
+                                <label for="name">First Name</label>
+                                <input type="text" class="form-control" name="first_name" placeholder="First Name">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Last Name</label>
+                                <input type="text" class="form-control" name="last_name" placeholder="Last Name">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Mobile Number</label>
+                                <input type="number" class="form-control" name="mob_no" placeholder="Mobile Number">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" class="form-control" name="user_name" placeholder="User Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" name="password" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="passwordconfirm">Confirm Password</label>
+                                <input type="passwordconfirm" class="form-control" id="passwordconfirm" name="passwordconfirm">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Register User</button>
+                        </form>
+
+                    </div>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <%- include footer %>
